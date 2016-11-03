@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470811DCA6D600036C89A /* AppDelegate.swift */; };
+		9A3470841DCA6D600036C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470831DCA6D600036C89A /* ViewController.swift */; };
+		9A3470871DCA6D600036C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470851DCA6D600036C89A /* Main.storyboard */; };
+		9A3470891DCA6D600036C89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470881DCA6D600036C89A /* Assets.xcassets */; };
+		9A34708C1DCA6D610036C89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A34708A1DCA6D610036C89A /* LaunchScreen.storyboard */; };
+		9A3470971DCA6D610036C89A /* MassageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470961DCA6D610036C89A /* MassageTests.swift */; };
+		9A3470A21DCA6D610036C89A /* MassageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470A11DCA6D610036C89A /* MassageUITests.swift */; };
+		9A3470B51DCA6F810036C89A /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470B41DCA6F810036C89A /* Tutorial.storyboard */; };
+		9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470B61DCA70E60036C89A /* TutorialViewController.swift */; };
+		9A3470D81DCA81890036C89A /* onboarding-address.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470CE1DCA81890036C89A /* onboarding-address.png */; };
+		9A3470D91DCA81890036C89A /* onboarding-forgotpass.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470CF1DCA81890036C89A /* onboarding-forgotpass.png */; };
+		9A3470DB1DCA81890036C89A /* onboarding-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D11DCA81890036C89A /* onboarding-logo.png */; };
+		9A3470DC1DCA81890036C89A /* onboarding-logowhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D21DCA81890036C89A /* onboarding-logowhite.png */; };
+		9A3470DD1DCA81890036C89A /* onboarding-relax.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D31DCA81890036C89A /* onboarding-relax.png */; };
+		9A3470DE1DCA81890036C89A /* onboarding-relaxbg-full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D41DCA81890036C89A /* onboarding-relaxbg-full.jpg */; };
+		9A3470DF1DCA81890036C89A /* onboarding-therapist.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D51DCA81890036C89A /* onboarding-therapist.png */; };
+		9A3470E01DCA81890036C89A /* onboarding-treatment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D61DCA81890036C89A /* onboarding-treatment.png */; };
+		9A3470E11DCA81890036C89A /* onboarding-tutorial.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470D71DCA81890036C89A /* onboarding-tutorial.png */; };
+		9A3470EA1DCAFB3E0036C89A /* onboarding-loginheader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470E91DCAFB3E0036C89A /* onboarding-loginheader.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A3470931DCA6D610036C89A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A3470761DCA6D600036C89A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A34707D1DCA6D600036C89A;
+			remoteInfo = Massage;
+		};
+		9A34709E1DCA6D610036C89A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A3470761DCA6D600036C89A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A34707D1DCA6D600036C89A;
+			remoteInfo = Massage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A34707E1DCA6D600036C89A /* Massage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3470811DCA6D600036C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A3470831DCA6D600036C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A3470861DCA6D600036C89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A3470881DCA6D600036C89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A34708B1DCA6D610036C89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A34708D1DCA6D610036C89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3470921DCA6D610036C89A /* MassageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3470961DCA6D610036C89A /* MassageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageTests.swift; sourceTree = "<group>"; };
+		9A3470981DCA6D610036C89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A34709D1DCA6D610036C89A /* MassageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MassageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3470A11DCA6D610036C89A /* MassageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageUITests.swift; sourceTree = "<group>"; };
+		9A3470A31DCA6D610036C89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3470B41DCA6F810036C89A /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		9A3470B61DCA70E60036C89A /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		9A3470CE1DCA81890036C89A /* onboarding-address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-address.png"; path = "images/onboarding-address.png"; sourceTree = "<group>"; };
+		9A3470CF1DCA81890036C89A /* onboarding-forgotpass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-forgotpass.png"; path = "images/onboarding-forgotpass.png"; sourceTree = "<group>"; };
+		9A3470D11DCA81890036C89A /* onboarding-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-logo.png"; path = "images/onboarding-logo.png"; sourceTree = "<group>"; };
+		9A3470D21DCA81890036C89A /* onboarding-logowhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-logowhite.png"; path = "images/onboarding-logowhite.png"; sourceTree = "<group>"; };
+		9A3470D31DCA81890036C89A /* onboarding-relax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-relax.png"; path = "images/onboarding-relax.png"; sourceTree = "<group>"; };
+		9A3470D41DCA81890036C89A /* onboarding-relaxbg-full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "onboarding-relaxbg-full.jpg"; path = "images/onboarding-relaxbg-full.jpg"; sourceTree = "<group>"; };
+		9A3470D51DCA81890036C89A /* onboarding-therapist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-therapist.png"; path = "images/onboarding-therapist.png"; sourceTree = "<group>"; };
+		9A3470D61DCA81890036C89A /* onboarding-treatment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-treatment.png"; path = "images/onboarding-treatment.png"; sourceTree = "<group>"; };
+		9A3470D71DCA81890036C89A /* onboarding-tutorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-tutorial.png"; path = "images/onboarding-tutorial.png"; sourceTree = "<group>"; };
+		9A3470E91DCAFB3E0036C89A /* onboarding-loginheader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "onboarding-loginheader.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A34707B1DCA6D600036C89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A34708F1DCA6D610036C89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A34709A1DCA6D610036C89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A3470751DCA6D600036C89A = {
+			isa = PBXGroup;
+			children = (
+				9A3470801DCA6D600036C89A /* Massage */,
+				9A3470951DCA6D610036C89A /* MassageTests */,
+				9A3470A01DCA6D610036C89A /* MassageUITests */,
+				9A34707F1DCA6D600036C89A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A34707F1DCA6D600036C89A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A34707E1DCA6D600036C89A /* Massage.app */,
+				9A3470921DCA6D610036C89A /* MassageTests.xctest */,
+				9A34709D1DCA6D610036C89A /* MassageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A3470801DCA6D600036C89A /* Massage */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470B81DCA7CD90036C89A /* Resource */,
+				9A3470B01DCA6EDB0036C89A /* ViewControllers */,
+				9A3470811DCA6D600036C89A /* AppDelegate.swift */,
+				9A3470831DCA6D600036C89A /* ViewController.swift */,
+				9A3470851DCA6D600036C89A /* Main.storyboard */,
+				9A3470881DCA6D600036C89A /* Assets.xcassets */,
+				9A34708A1DCA6D610036C89A /* LaunchScreen.storyboard */,
+				9A34708D1DCA6D610036C89A /* Info.plist */,
+			);
+			path = Massage;
+			sourceTree = "<group>";
+		};
+		9A3470951DCA6D610036C89A /* MassageTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470961DCA6D610036C89A /* MassageTests.swift */,
+				9A3470981DCA6D610036C89A /* Info.plist */,
+			);
+			path = MassageTests;
+			sourceTree = "<group>";
+		};
+		9A3470A01DCA6D610036C89A /* MassageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470A11DCA6D610036C89A /* MassageUITests.swift */,
+				9A3470A31DCA6D610036C89A /* Info.plist */,
+			);
+			path = MassageUITests;
+			sourceTree = "<group>";
+		};
+		9A3470B01DCA6EDB0036C89A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470B11DCA6EFC0036C89A /* Tutorial */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9A3470B11DCA6EFC0036C89A /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470B41DCA6F810036C89A /* Tutorial.storyboard */,
+				9A3470B61DCA70E60036C89A /* TutorialViewController.swift */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		9A3470B81DCA7CD90036C89A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470B91DCA7CEA0036C89A /* images */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		9A3470B91DCA7CEA0036C89A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9A3470E91DCAFB3E0036C89A /* onboarding-loginheader.jpg */,
+				9A3470CE1DCA81890036C89A /* onboarding-address.png */,
+				9A3470CF1DCA81890036C89A /* onboarding-forgotpass.png */,
+				9A3470D11DCA81890036C89A /* onboarding-logo.png */,
+				9A3470D21DCA81890036C89A /* onboarding-logowhite.png */,
+				9A3470D31DCA81890036C89A /* onboarding-relax.png */,
+				9A3470D41DCA81890036C89A /* onboarding-relaxbg-full.jpg */,
+				9A3470D51DCA81890036C89A /* onboarding-therapist.png */,
+				9A3470D61DCA81890036C89A /* onboarding-treatment.png */,
+				9A3470D71DCA81890036C89A /* onboarding-tutorial.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A34707D1DCA6D600036C89A /* Massage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3470A61DCA6D610036C89A /* Build configuration list for PBXNativeTarget "Massage" */;
+			buildPhases = (
+				9A34707A1DCA6D600036C89A /* Sources */,
+				9A34707B1DCA6D600036C89A /* Frameworks */,
+				9A34707C1DCA6D600036C89A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Massage;
+			productName = Massage;
+			productReference = 9A34707E1DCA6D600036C89A /* Massage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A3470911DCA6D610036C89A /* MassageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3470A91DCA6D610036C89A /* Build configuration list for PBXNativeTarget "MassageTests" */;
+			buildPhases = (
+				9A34708E1DCA6D610036C89A /* Sources */,
+				9A34708F1DCA6D610036C89A /* Frameworks */,
+				9A3470901DCA6D610036C89A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A3470941DCA6D610036C89A /* PBXTargetDependency */,
+			);
+			name = MassageTests;
+			productName = MassageTests;
+			productReference = 9A3470921DCA6D610036C89A /* MassageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A34709C1DCA6D610036C89A /* MassageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3470AC1DCA6D610036C89A /* Build configuration list for PBXNativeTarget "MassageUITests" */;
+			buildPhases = (
+				9A3470991DCA6D610036C89A /* Sources */,
+				9A34709A1DCA6D610036C89A /* Frameworks */,
+				9A34709B1DCA6D610036C89A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A34709F1DCA6D610036C89A /* PBXTargetDependency */,
+			);
+			name = MassageUITests;
+			productName = MassageUITests;
+			productReference = 9A34709D1DCA6D610036C89A /* MassageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A3470761DCA6D600036C89A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = urban;
+				TargetAttributes = {
+					9A34707D1DCA6D600036C89A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					9A3470911DCA6D610036C89A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A34707D1DCA6D600036C89A;
+					};
+					9A34709C1DCA6D610036C89A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A34707D1DCA6D600036C89A;
+					};
+				};
+			};
+			buildConfigurationList = 9A3470791DCA6D600036C89A /* Build configuration list for PBXProject "Massage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A3470751DCA6D600036C89A;
+			productRefGroup = 9A34707F1DCA6D600036C89A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A34707D1DCA6D600036C89A /* Massage */,
+				9A3470911DCA6D610036C89A /* MassageTests */,
+				9A34709C1DCA6D610036C89A /* MassageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A34707C1DCA6D600036C89A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3470D91DCA81890036C89A /* onboarding-forgotpass.png in Resources */,
+				9A3470D81DCA81890036C89A /* onboarding-address.png in Resources */,
+				9A34708C1DCA6D610036C89A /* LaunchScreen.storyboard in Resources */,
+				9A3470E01DCA81890036C89A /* onboarding-treatment.png in Resources */,
+				9A3470E11DCA81890036C89A /* onboarding-tutorial.png in Resources */,
+				9A3470DE1DCA81890036C89A /* onboarding-relaxbg-full.jpg in Resources */,
+				9A3470891DCA6D600036C89A /* Assets.xcassets in Resources */,
+				9A3470EA1DCAFB3E0036C89A /* onboarding-loginheader.jpg in Resources */,
+				9A3470DD1DCA81890036C89A /* onboarding-relax.png in Resources */,
+				9A3470B51DCA6F810036C89A /* Tutorial.storyboard in Resources */,
+				9A3470871DCA6D600036C89A /* Main.storyboard in Resources */,
+				9A3470DC1DCA81890036C89A /* onboarding-logowhite.png in Resources */,
+				9A3470DB1DCA81890036C89A /* onboarding-logo.png in Resources */,
+				9A3470DF1DCA81890036C89A /* onboarding-therapist.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A3470901DCA6D610036C89A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A34709B1DCA6D610036C89A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A34707A1DCA6D600036C89A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3470841DCA6D600036C89A /* ViewController.swift in Sources */,
+				9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */,
+				9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A34708E1DCA6D610036C89A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3470971DCA6D610036C89A /* MassageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A3470991DCA6D610036C89A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3470A21DCA6D610036C89A /* MassageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A3470941DCA6D610036C89A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A34707D1DCA6D600036C89A /* Massage */;
+			targetProxy = 9A3470931DCA6D610036C89A /* PBXContainerItemProxy */;
+		};
+		9A34709F1DCA6D610036C89A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A34707D1DCA6D600036C89A /* Massage */;
+			targetProxy = 9A34709E1DCA6D610036C89A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A3470851DCA6D600036C89A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A3470861DCA6D600036C89A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A34708A1DCA6D610036C89A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A34708B1DCA6D610036C89A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A3470A41DCA6D610036C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A3470A51DCA6D610036C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A3470A71DCA6D610036C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Massage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.Massage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9A3470A81DCA6D610036C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Massage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.Massage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9A3470AA1DCA6D610036C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MassageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.MassageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Massage.app/Massage";
+			};
+			name = Debug;
+		};
+		9A3470AB1DCA6D610036C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MassageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.MassageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Massage.app/Massage";
+			};
+			name = Release;
+		};
+		9A3470AD1DCA6D610036C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MassageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.MassageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Massage;
+			};
+			name = Debug;
+		};
+		9A3470AE1DCA6D610036C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MassageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.MassageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Massage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A3470791DCA6D600036C89A /* Build configuration list for PBXProject "Massage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3470A41DCA6D610036C89A /* Debug */,
+				9A3470A51DCA6D610036C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A3470A61DCA6D610036C89A /* Build configuration list for PBXNativeTarget "Massage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3470A71DCA6D610036C89A /* Debug */,
+				9A3470A81DCA6D610036C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A3470A91DCA6D610036C89A /* Build configuration list for PBXNativeTarget "MassageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3470AA1DCA6D610036C89A /* Debug */,
+				9A3470AB1DCA6D610036C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A3470AC1DCA6D610036C89A /* Build configuration list for PBXNativeTarget "MassageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3470AD1DCA6D610036C89A /* Debug */,
+				9A3470AE1DCA6D610036C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A3470761DCA6D600036C89A /* Project object */;
+}
