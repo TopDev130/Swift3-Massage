@@ -20,6 +20,7 @@
 		821A92251DCBEB2300CDE752 /* card7.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921C1DCBEB2300CDE752 /* card7.png */; };
 		821A92261DCBEB2300CDE752 /* card8.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921D1DCBEB2300CDE752 /* card8.png */; };
 		821A92271DCBEB2300CDE752 /* card9.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921E1DCBEB2300CDE752 /* card9.png */; };
+		821A92291DCBF26300CDE752 /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92281DCBF26300CDE752 /* TherapistViewController.swift */; };
 		9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470811DCA6D600036C89A /* AppDelegate.swift */; };
 		9A3470841DCA6D600036C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470831DCA6D600036C89A /* ViewController.swift */; };
 		9A3470871DCA6D600036C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470851DCA6D600036C89A /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		821A921C1DCBEB2300CDE752 /* card7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card7.png; sourceTree = "<group>"; };
 		821A921D1DCBEB2300CDE752 /* card8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card8.png; sourceTree = "<group>"; };
 		821A921E1DCBEB2300CDE752 /* card9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card9.png; sourceTree = "<group>"; };
+		821A92281DCBF26300CDE752 /* TherapistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewController.swift; sourceTree = "<group>"; };
 		9A34707E1DCA6D600036C89A /* Massage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3470811DCA6D600036C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3470831DCA6D600036C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				9A3470B41DCA6F810036C89A /* Tutorial.storyboard */,
 				9A3470B61DCA70E60036C89A /* TutorialViewController.swift */,
 				821A920C1DCBE13C00CDE752 /* TreatmentViewController.swift */,
+				821A92281DCBF26300CDE752 /* TherapistViewController.swift */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */,
 				9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */,
 				821A92101DCBE27400CDE752 /* CustomKolodaView.swift in Sources */,
+				821A92291DCBF26300CDE752 /* TherapistViewController.swift in Sources */,
 				821A92121DCBE70900CDE752 /* BackgroundKolodaAnimation.swift in Sources */,
 				821A920D1DCBE13C00CDE752 /* TreatmentViewController.swift in Sources */,
 			);

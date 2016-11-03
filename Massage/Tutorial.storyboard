@@ -146,7 +146,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-sR-kTp" userLabel="Card View" customClass="CustomKolodaView" customModule="Massage" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-sR-kTp" userLabel="Card View" customClass="KolodaView" customModule="Koloda">
                                 <constraints>
                                     <constraint firstAttribute="height" secondItem="Ema-sR-kTp" secondAttribute="width" id="eoZ-FK-4KD"/>
                                     <constraint firstAttribute="width" constant="300" id="pPr-ol-aGx"/>
@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="3252" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--Therapist View Controller-->
         <scene sceneID="gR6-Qb-g4W">
             <objects>
-                <viewController storyboardIdentifier="TutorialPage3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mNt-YT-ZGl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialPage3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mNt-YT-ZGl" customClass="TherapistViewController" customModule="Massage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ie6-jP-PmL"/>
                         <viewControllerLayoutGuide type="bottom" id="kAx-oL-MQf"/>
@@ -219,7 +219,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0v-ht-MKQ" userLabel="Card View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0v-ht-MKQ" userLabel="Card View" customClass="KolodaView" customModule="Koloda">
                                 <constraints>
                                     <constraint firstAttribute="height" secondItem="A0v-ht-MKQ" secondAttribute="width" id="DWw-mq-uDR"/>
                                     <constraint firstAttribute="width" constant="300" id="H5W-Qg-KpP"/>
@@ -255,6 +255,9 @@
                             <constraint firstItem="PQx-Dq-cfv" firstAttribute="top" secondItem="KQG-Go-7i0" secondAttribute="bottom" constant="10" id="zb9-rZ-Wst"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="therapistView" destination="A0v-ht-MKQ" id="8za-EN-Xuu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zic-K9-fII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,5 +1,5 @@
 //
-//  TreatmentViewController.swift
+//  TherapistViewController.swift
 //  Massage
 //
 //  Created by Panda2 on 11/4/16.
@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 import UIKit
 import Koloda
 import pop
@@ -17,42 +18,43 @@ private let frameAnimationSpringSpeed: CGFloat = 16
 private let kolodaCountOfVisibleCards = 2
 private let kolodaAlphaValueSemiTransparent: CGFloat = 0.1
 
-class TreatmentViewController: UIViewController {
+class TherapistViewController: UIViewController {
     
-    @IBOutlet weak var treatmentView: KolodaView!
+    @IBOutlet weak var therapistView: KolodaView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        treatmentView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
-        treatmentView.countOfVisibleCards = kolodaCountOfVisibleCards
-        treatmentView.delegate = self
-        treatmentView.dataSource = self
-        treatmentView.animator = BackgroundKolodaAnimator(koloda: treatmentView)
+        therapistView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
+        therapistView.countOfVisibleCards = kolodaCountOfVisibleCards
+        therapistView.delegate = self
+        therapistView.dataSource = self
+        therapistView.animator = BackgroundKolodaAnimator(koloda: therapistView)
         
         self.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
-
+        
     }
     
 }
 
 //MARK: KolodaViewDelegate
-extension TreatmentViewController: KolodaViewDelegate {
+extension TherapistViewController: KolodaViewDelegate {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        treatmentView.resetCurrentCardIndex()
+        therapistView.resetCurrentCardIndex()
     }
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
-//        UIApplication.shared.open(URL(string: "http://yalantis.com/")!, options: nil, completionHandler: { })
+        //        UIApplication.shared.open(URL(string: "http://yalantis.com/")!, options: nil, completionHandler: { })
     }
     
     func kolodaShouldApplyAppearAnimation(_ koloda: KolodaView) -> Bool {
         return true
     }
     
-//    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
-//        return [.right]
-//    }
+    //    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+    //        return [.right]
+    //    }
     
     func kolodaShouldMoveBackgroundCard(_ koloda: KolodaView) -> Bool {
         return false
@@ -71,7 +73,7 @@ extension TreatmentViewController: KolodaViewDelegate {
 }
 
 //MARK: KolodaViewDataSource
-extension TreatmentViewController: KolodaViewDataSource {
+extension TherapistViewController: KolodaViewDataSource {
     
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
         return numberOfCards
@@ -84,6 +86,6 @@ extension TreatmentViewController: KolodaViewDataSource {
     
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
         return nil
-//        return Bundle.main.loadNibNamed("CustomOverlayView", owner: self, options: nil)?[0] as? OverlayView
+        //        return Bundle.main.loadNibNamed("CustomOverlayView", owner: self, options: nil)?[0] as? OverlayView
     }
 }
