@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="1376.8" y="121.88905547226388"/>
         </scene>
-        <!--View Controller-->
+        <!--Treatment View Controller-->
         <scene sceneID="REQ-4y-alh">
             <objects>
-                <viewController storyboardIdentifier="TutorialPage2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sbw-4L-eCw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialPage2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sbw-4L-eCw" customClass="TreatmentViewController" customModule="Massage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1z0-uQ-gWv"/>
                         <viewControllerLayoutGuide type="bottom" id="QgI-vh-Muv"/>
@@ -146,7 +146,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-sR-kTp" userLabel="Card View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-sR-kTp" userLabel="Card View" customClass="CustomKolodaView" customModule="Massage" customModuleProvider="target">
                                 <constraints>
                                     <constraint firstAttribute="height" secondItem="Ema-sR-kTp" secondAttribute="width" id="eoZ-FK-4KD"/>
                                     <constraint firstAttribute="width" constant="300" id="pPr-ol-aGx"/>
@@ -181,6 +181,9 @@
                             <constraint firstItem="Ema-sR-kTp" firstAttribute="centerX" secondItem="bOl-UB-X3n" secondAttribute="centerX" id="mwa-bh-tDW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="treatmentView" destination="Ema-sR-kTp" id="ydk-Hz-cIn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6Q-qQ-py9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

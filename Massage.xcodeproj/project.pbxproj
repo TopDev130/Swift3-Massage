@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		64FCA7EB73072DCA743E7AEB /* Pods_Massage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDFEADD01261C0128AB49BD /* Pods_Massage.framework */; };
+		821A920D1DCBE13C00CDE752 /* TreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A920C1DCBE13C00CDE752 /* TreatmentViewController.swift */; };
+		821A92101DCBE27400CDE752 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A920F1DCBE27400CDE752 /* CustomKolodaView.swift */; };
+		821A92121DCBE70900CDE752 /* BackgroundKolodaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92111DCBE70900CDE752 /* BackgroundKolodaAnimation.swift */; };
+		821A921F1DCBEB2300CDE752 /* card1.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A92161DCBEB2300CDE752 /* card1.png */; };
+		821A92201DCBEB2300CDE752 /* card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A92171DCBEB2300CDE752 /* card2.png */; };
+		821A92211DCBEB2300CDE752 /* card3.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A92181DCBEB2300CDE752 /* card3.png */; };
+		821A92221DCBEB2300CDE752 /* card4.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A92191DCBEB2300CDE752 /* card4.png */; };
+		821A92231DCBEB2300CDE752 /* card5.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921A1DCBEB2300CDE752 /* card5.png */; };
+		821A92241DCBEB2300CDE752 /* card6.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921B1DCBEB2300CDE752 /* card6.png */; };
+		821A92251DCBEB2300CDE752 /* card7.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921C1DCBEB2300CDE752 /* card7.png */; };
+		821A92261DCBEB2300CDE752 /* card8.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921D1DCBEB2300CDE752 /* card8.png */; };
+		821A92271DCBEB2300CDE752 /* card9.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921E1DCBEB2300CDE752 /* card9.png */; };
 		9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470811DCA6D600036C89A /* AppDelegate.swift */; };
 		9A3470841DCA6D600036C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470831DCA6D600036C89A /* ViewController.swift */; };
 		9A3470871DCA6D600036C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470851DCA6D600036C89A /* Main.storyboard */; };
@@ -49,6 +61,18 @@
 /* Begin PBXFileReference section */
 		2FFAB30350EEB97C82D95199 /* Pods-Massage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Massage/Pods-Massage.release.xcconfig"; sourceTree = "<group>"; };
 		45AEFA36FC0F206092F4BB05 /* Pods-Massage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Massage/Pods-Massage.debug.xcconfig"; sourceTree = "<group>"; };
+		821A920C1DCBE13C00CDE752 /* TreatmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatmentViewController.swift; sourceTree = "<group>"; };
+		821A920F1DCBE27400CDE752 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
+		821A92111DCBE70900CDE752 /* BackgroundKolodaAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundKolodaAnimation.swift; sourceTree = "<group>"; };
+		821A92161DCBEB2300CDE752 /* card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card1.png; sourceTree = "<group>"; };
+		821A92171DCBEB2300CDE752 /* card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card2.png; sourceTree = "<group>"; };
+		821A92181DCBEB2300CDE752 /* card3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card3.png; sourceTree = "<group>"; };
+		821A92191DCBEB2300CDE752 /* card4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card4.png; sourceTree = "<group>"; };
+		821A921A1DCBEB2300CDE752 /* card5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card5.png; sourceTree = "<group>"; };
+		821A921B1DCBEB2300CDE752 /* card6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card6.png; sourceTree = "<group>"; };
+		821A921C1DCBEB2300CDE752 /* card7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card7.png; sourceTree = "<group>"; };
+		821A921D1DCBEB2300CDE752 /* card8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card8.png; sourceTree = "<group>"; };
+		821A921E1DCBEB2300CDE752 /* card9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card9.png; sourceTree = "<group>"; };
 		9A34707E1DCA6D600036C89A /* Massage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3470811DCA6D600036C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3470831DCA6D600036C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +136,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		821A920E1DCBE24F00CDE752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				821A920F1DCBE27400CDE752 /* CustomKolodaView.swift */,
+				821A92111DCBE70900CDE752 /* BackgroundKolodaAnimation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		821A92151DCBEA4700CDE752 /* treatment */ = {
+			isa = PBXGroup;
+			children = (
+				821A92161DCBEB2300CDE752 /* card1.png */,
+				821A92171DCBEB2300CDE752 /* card2.png */,
+				821A92181DCBEB2300CDE752 /* card3.png */,
+				821A92191DCBEB2300CDE752 /* card4.png */,
+				821A921A1DCBEB2300CDE752 /* card5.png */,
+				821A921B1DCBEB2300CDE752 /* card6.png */,
+				821A921C1DCBEB2300CDE752 /* card7.png */,
+				821A921D1DCBEB2300CDE752 /* card8.png */,
+				821A921E1DCBEB2300CDE752 /* card9.png */,
+			);
+			name = treatment;
+			sourceTree = "<group>";
+		};
 		96BA3C080740C211539DC551 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +194,7 @@
 		9A3470801DCA6D600036C89A /* Massage */ = {
 			isa = PBXGroup;
 			children = (
+				821A920E1DCBE24F00CDE752 /* Model */,
 				9A3470B81DCA7CD90036C89A /* Resource */,
 				9A3470B01DCA6EDB0036C89A /* ViewControllers */,
 				9A3470811DCA6D600036C89A /* AppDelegate.swift */,
@@ -188,6 +238,7 @@
 			children = (
 				9A3470B41DCA6F810036C89A /* Tutorial.storyboard */,
 				9A3470B61DCA70E60036C89A /* TutorialViewController.swift */,
+				821A920C1DCBE13C00CDE752 /* TreatmentViewController.swift */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -195,6 +246,7 @@
 		9A3470B81DCA7CD90036C89A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				821A92151DCBEA4700CDE752 /* treatment */,
 				9A3470B91DCA7CEA0036C89A /* images */,
 			);
 			name = Resource;
@@ -288,15 +340,18 @@
 				TargetAttributes = {
 					9A34707D1DCA6D600036C89A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
 					9A3470911DCA6D610036C89A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9A34707D1DCA6D600036C89A;
 					};
 					9A34709C1DCA6D610036C89A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9A34707D1DCA6D600036C89A;
 					};
@@ -327,20 +382,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821A92211DCBEB2300CDE752 /* card3.png in Resources */,
 				9A3470D91DCA81890036C89A /* onboarding-forgotpass.png in Resources */,
+				821A921F1DCBEB2300CDE752 /* card1.png in Resources */,
 				9A3470D81DCA81890036C89A /* onboarding-address.png in Resources */,
+				821A92271DCBEB2300CDE752 /* card9.png in Resources */,
 				9A34708C1DCA6D610036C89A /* LaunchScreen.storyboard in Resources */,
 				9A3470E01DCA81890036C89A /* onboarding-treatment.png in Resources */,
+				821A92221DCBEB2300CDE752 /* card4.png in Resources */,
 				9A3470E11DCA81890036C89A /* onboarding-tutorial.png in Resources */,
 				9A3470DE1DCA81890036C89A /* onboarding-relaxbg-full.jpg in Resources */,
+				821A92261DCBEB2300CDE752 /* card8.png in Resources */,
+				821A92201DCBEB2300CDE752 /* card2.png in Resources */,
 				9A3470891DCA6D600036C89A /* Assets.xcassets in Resources */,
 				9A3470EA1DCAFB3E0036C89A /* onboarding-loginheader.jpg in Resources */,
 				9A3470DD1DCA81890036C89A /* onboarding-relax.png in Resources */,
 				9A3470B51DCA6F810036C89A /* Tutorial.storyboard in Resources */,
 				9A3470871DCA6D600036C89A /* Main.storyboard in Resources */,
 				9A3470DC1DCA81890036C89A /* onboarding-logowhite.png in Resources */,
+				821A92241DCBEB2300CDE752 /* card6.png in Resources */,
 				9A3470DB1DCA81890036C89A /* onboarding-logo.png in Resources */,
+				821A92251DCBEB2300CDE752 /* card7.png in Resources */,
 				9A3470DF1DCA81890036C89A /* onboarding-therapist.png in Resources */,
+				821A92231DCBEB2300CDE752 /* card5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +452,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCF16D524DCF75B8F46BEAC9 /* [CP] Embed Pods Frameworks */ = {
@@ -416,6 +480,9 @@
 				9A3470841DCA6D600036C89A /* ViewController.swift in Sources */,
 				9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */,
 				9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */,
+				821A92101DCBE27400CDE752 /* CustomKolodaView.swift in Sources */,
+				821A92121DCBE70900CDE752 /* BackgroundKolodaAnimation.swift in Sources */,
+				821A920D1DCBE13C00CDE752 /* TreatmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

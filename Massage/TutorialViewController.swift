@@ -15,13 +15,12 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate, UIGestureR
     @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
-        let next = UISwipeGestureRecognizer(target: self, action: #selector(TutorialViewController.handleSwipes(sender:)))
+        let next = UISwipeGestureRecognizer(target: self, action: #selector(TutorialViewController.handleSwipes(_:)))
         
         next.direction = .left
         next.delegate = self
         view.addGestureRecognizer(next)
         
-        self.pageControl.transform = CGAffineTransform(scaleX: 1, y: 1.2)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,7 +57,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate, UIGestureR
         return true
     }
     
-    func handleSwipes(sender:UISwipeGestureRecognizer) {
+    func handleSwipes(_ sender:UISwipeGestureRecognizer) {
         if (sender.direction == .left) {
             if self.pageControl.currentPage == 2 {
                 doSkipAction()
@@ -71,6 +70,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate, UIGestureR
     }
     
     @IBAction func changePage(_ sender: AnyObject) {
+        
         UIView.animate(withDuration: 0.3, animations: {
             let whichPage = self.pageControl.currentPage
             self.scrollView.contentOffset = CGPoint(x: self.scrollView.frame.size.width * CGFloat(whichPage), y: 0)
