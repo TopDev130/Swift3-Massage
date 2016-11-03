@@ -1,0 +1,6 @@
+framework module Pods_Massage {
+  umbrella header "Pods-Massage-umbrella.h"
+
+  export *
+  module * { export * }
+}

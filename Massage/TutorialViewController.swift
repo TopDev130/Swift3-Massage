@@ -68,7 +68,6 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate, UIGestureR
     
     func doSkipAction() {
         print("Skip function")
-
     }
     
     @IBAction func changePage(_ sender: AnyObject) {

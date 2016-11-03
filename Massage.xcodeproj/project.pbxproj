@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		821A92071DCBCC6B00CDE752 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92061DCBCC6B00CDE752 /* KolodaView.swift */; };
-		821A92091DCBCC7A00CDE752 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92081DCBCC7A00CDE752 /* DraggableCardView.swift */; };
-		821A920B1DCBCC8200CDE752 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A920A1DCBCC8200CDE752 /* OverlayView.swift */; };
+		64FCA7EB73072DCA743E7AEB /* Pods_Massage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDFEADD01261C0128AB49BD /* Pods_Massage.framework */; };
 		9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470811DCA6D600036C89A /* AppDelegate.swift */; };
 		9A3470841DCA6D600036C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470831DCA6D600036C89A /* ViewController.swift */; };
 		9A3470871DCA6D600036C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470851DCA6D600036C89A /* Main.storyboard */; };
@@ -49,9 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		821A92061DCBCC6B00CDE752 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
-		821A92081DCBCC7A00CDE752 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
-		821A920A1DCBCC8200CDE752 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		2FFAB30350EEB97C82D95199 /* Pods-Massage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Massage/Pods-Massage.release.xcconfig"; sourceTree = "<group>"; };
+		45AEFA36FC0F206092F4BB05 /* Pods-Massage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Massage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Massage/Pods-Massage.debug.xcconfig"; sourceTree = "<group>"; };
 		9A34707E1DCA6D600036C89A /* Massage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3470811DCA6D600036C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3470831DCA6D600036C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +74,7 @@
 		9A3470D61DCA81890036C89A /* onboarding-treatment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-treatment.png"; path = "images/onboarding-treatment.png"; sourceTree = "<group>"; };
 		9A3470D71DCA81890036C89A /* onboarding-tutorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onboarding-tutorial.png"; path = "images/onboarding-tutorial.png"; sourceTree = "<group>"; };
 		9A3470E91DCAFB3E0036C89A /* onboarding-loginheader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "onboarding-loginheader.jpg"; sourceTree = "<group>"; };
+		9EDFEADD01261C0128AB49BD /* Pods_Massage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Massage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FCA7EB73072DCA743E7AEB /* Pods_Massage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E54EDB3088E5848E196127 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45AEFA36FC0F206092F4BB05 /* Pods-Massage.debug.xcconfig */,
+				2FFAB30350EEB97C82D95199 /* Pods-Massage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96BA3C080740C211539DC551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EDFEADD01261C0128AB49BD /* Pods_Massage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A3470751DCA6D600036C89A = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +127,8 @@
 				9A3470951DCA6D610036C89A /* MassageTests */,
 				9A3470A01DCA6D610036C89A /* MassageUITests */,
 				9A34707F1DCA6D600036C89A /* Products */,
+				24E54EDB3088E5848E196127 /* Pods */,
+				96BA3C080740C211539DC551 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,9 +186,6 @@
 		9A3470B11DCA6EFC0036C89A /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				821A920A1DCBCC8200CDE752 /* OverlayView.swift */,
-				821A92081DCBCC7A00CDE752 /* DraggableCardView.swift */,
-				821A92061DCBCC6B00CDE752 /* KolodaView.swift */,
 				9A3470B41DCA6F810036C89A /* Tutorial.storyboard */,
 				9A3470B61DCA70E60036C89A /* TutorialViewController.swift */,
 			);
@@ -209,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A3470A61DCA6D610036C89A /* Build configuration list for PBXNativeTarget "Massage" */;
 			buildPhases = (
+				8C8BA1BD4313838CFF25544A /* [CP] Check Pods Manifest.lock */,
 				9A34707A1DCA6D600036C89A /* Sources */,
 				9A34707B1DCA6D600036C89A /* Frameworks */,
 				9A34707C1DCA6D600036C89A /* Resources */,
+				BCF16D524DCF75B8F46BEAC9 /* [CP] Embed Pods Frameworks */,
+				76C37F2D16A82920A94B23A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,15 +360,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76C37F2D16A82920A94B23A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Massage/Pods-Massage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C8BA1BD4313838CFF25544A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF16D524DCF75B8F46BEAC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Massage/Pods-Massage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A34707A1DCA6D600036C89A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				821A92091DCBCC7A00CDE752 /* DraggableCardView.swift in Sources */,
-				821A92071DCBCC6B00CDE752 /* KolodaView.swift in Sources */,
 				9A3470841DCA6D600036C89A /* ViewController.swift in Sources */,
-				821A920B1DCBCC8200CDE752 /* OverlayView.swift in Sources */,
 				9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */,
 				9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */,
 			);
@@ -502,6 +565,7 @@
 		};
 		9A3470A71DCA6D610036C89A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AEFA36FC0F206092F4BB05 /* Pods-Massage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -515,6 +579,7 @@
 		};
 		9A3470A81DCA6D610036C89A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFAB30350EEB97C82D95199 /* Pods-Massage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

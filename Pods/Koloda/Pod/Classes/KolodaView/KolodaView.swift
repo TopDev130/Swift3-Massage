@@ -240,7 +240,7 @@ public class KolodaView: UIView, DraggableCardDelegate {
     }
     
     public func applyAppearAnimationIfNeeded() {
-        if let shouldApply = delegate?.kolodaShouldApplyAppearAnimation(self) , shouldApply == true {
+        if let shouldApply = delegate?.kolodaShouldApplyAppearAnimation(self) where shouldApply == true {
             applyAppearAnimation()
         }
     }
@@ -250,7 +250,7 @@ public class KolodaView: UIView, DraggableCardDelegate {
     func card(card: DraggableCardView, wasDraggedWithFinishPercentage percentage: CGFloat, inDirection direction: SwipeResultDirection) {
         animating = true
         
-        if let shouldMove = delegate?.kolodaShouldMoveBackgroundCard(self) , shouldMove {
+        if let shouldMove = delegate?.kolodaShouldMoveBackgroundCard(self) where shouldMove {
             self.moveOtherCardsWithPercentage(percentage)
         }
         delegate?.koloda(self, draggedCardWithPercentage: percentage, inDirection: direction)
@@ -494,7 +494,7 @@ public class KolodaView: UIView, DraggableCardDelegate {
     // MARK: Public
     
     public func reloadData() {
-        guard let numberOfCards = dataSource?.kolodaNumberOfCards(self) , numberOfCards > 0 else {
+        guard let numberOfCards = dataSource?.kolodaNumberOfCards(self) where numberOfCards > 0 else {
             clear()
             return
         }
@@ -518,12 +518,7 @@ public class KolodaView: UIView, DraggableCardDelegate {
         }
     }
     
-    public func swipe(direction: SwipeResultDirection,force: Bool = true) {
-        
-        let shouldSwipe = delegate?.koloda(self, shouldSwipeCardAtIndex: UInt(self.currentCardIndex), inDirection: direction) ?? true
-        guard force || shouldSwipe else {
-            return
-        }
+    public func swipe(direction: SwipeResultDirection) {
         
         let validDirection = delegate?.koloda(self, allowedDirectionsForIndex: UInt(currentCardIndex)).contains(direction) ?? true
         guard validDirection else { return }
@@ -667,7 +662,7 @@ public class KolodaView: UIView, DraggableCardDelegate {
         layoutDeck()
         for (index, card) in visibleCards.enumerate() {
             card.alpha = shouldTransparentizeNextCard && index != 0 ? alphaValueSemiTransparent : alphaValueOpaque
-            card.isUserInteractionEnabled = index == 0
+            card.userInteractionEnabled = index == 0
         }
         animating = false
         
@@ -684,7 +679,7 @@ public class KolodaView: UIView, DraggableCardDelegate {
             return
         }
         
-        let visibleIndexes = Int(indexRange).filter { $0 >= currentCardIndex && $0 < currentCardIndex + countOfVisibleCards }
+        let visibleIndexes = [Int](indexRange).filter { $0 >= currentCardIndex && $0 < currentCardIndex + countOfVisibleCards }
         visibleIndexes.forEach { index in
             let visibleCardIndex = index - currentCardIndex
             if visibleCards.count > visibleCardIndex {
