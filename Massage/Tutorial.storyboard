@@ -145,7 +145,41 @@
                     <view key="view" contentMode="scaleToFill" id="bOl-UB-X3n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-sR-kTp" userLabel="Card View">
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="Ema-sR-kTp" secondAttribute="width" id="eoZ-FK-4KD"/>
+                                    <constraint firstAttribute="width" constant="300" id="pPr-ol-aGx"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-treatment.png" translatesAutoresizingMaskIntoConstraints="NO" id="NU9-A9-hep" userLabel="Treatment Image">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rSL-ig-LB0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Treatment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuG-Lq-ZWK">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a date and time that's convenient for you, the massage you'd like and your therapist." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ja-Xa-SPZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EuG-Lq-ZWK" firstAttribute="centerX" secondItem="bOl-UB-X3n" secondAttribute="centerX" id="2r4-Tj-Cx0"/>
+                            <constraint firstItem="NU9-A9-hep" firstAttribute="top" secondItem="Ema-sR-kTp" secondAttribute="bottom" constant="40" id="Awh-wY-8Px"/>
+                            <constraint firstItem="2Ja-Xa-SPZ" firstAttribute="top" secondItem="EuG-Lq-ZWK" secondAttribute="bottom" constant="10" id="FD6-kF-tKL"/>
+                            <constraint firstItem="2Ja-Xa-SPZ" firstAttribute="width" secondItem="bOl-UB-X3n" secondAttribute="width" multiplier="0.9" id="G9W-ey-T2A"/>
+                            <constraint firstItem="2Ja-Xa-SPZ" firstAttribute="centerX" secondItem="bOl-UB-X3n" secondAttribute="centerX" id="JJJ-UA-e1H"/>
+                            <constraint firstItem="Ema-sR-kTp" firstAttribute="centerY" secondItem="bOl-UB-X3n" secondAttribute="centerY" multiplier="0.75" id="Ow6-tF-1OV"/>
+                            <constraint firstItem="EuG-Lq-ZWK" firstAttribute="top" secondItem="NU9-A9-hep" secondAttribute="bottom" constant="10" id="QK9-Hc-vwt"/>
+                            <constraint firstItem="NU9-A9-hep" firstAttribute="centerX" secondItem="bOl-UB-X3n" secondAttribute="centerX" id="VBi-Ta-w6b"/>
+                            <constraint firstItem="Ema-sR-kTp" firstAttribute="centerX" secondItem="bOl-UB-X3n" secondAttribute="centerX" id="mwa-bh-tDW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6Q-qQ-py9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,7 +215,42 @@
                     <view key="view" contentMode="scaleToFill" id="j20-pP-mFi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0v-ht-MKQ" userLabel="Card View">
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="A0v-ht-MKQ" secondAttribute="width" id="DWw-mq-uDR"/>
+                                    <constraint firstAttribute="width" constant="300" id="H5W-Qg-KpP"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-therapist.png" translatesAutoresizingMaskIntoConstraints="NO" id="zmN-7P-2la" userLabel="Therapist Image">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Of-94-yff"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Therapist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQG-Go-7i0">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQx-Dq-cfv">
+                                <string key="text">With 500+ therapist, background checked and reviewed by real customers like you, you can rest assured to find one that will suit your needs.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQx-Dq-cfv" firstAttribute="centerX" secondItem="j20-pP-mFi" secondAttribute="centerX" id="2l6-NV-CER"/>
+                            <constraint firstItem="KQG-Go-7i0" firstAttribute="top" secondItem="zmN-7P-2la" secondAttribute="bottom" constant="10" id="CPX-B1-Tmg"/>
+                            <constraint firstItem="PQx-Dq-cfv" firstAttribute="width" secondItem="j20-pP-mFi" secondAttribute="width" multiplier="0.9" id="EoE-1U-Zve"/>
+                            <constraint firstItem="zmN-7P-2la" firstAttribute="top" secondItem="A0v-ht-MKQ" secondAttribute="bottom" constant="40" id="NxP-Io-PpU"/>
+                            <constraint firstItem="zmN-7P-2la" firstAttribute="centerX" secondItem="j20-pP-mFi" secondAttribute="centerX" id="aqT-sD-Uue"/>
+                            <constraint firstItem="A0v-ht-MKQ" firstAttribute="centerX" secondItem="j20-pP-mFi" secondAttribute="centerX" id="dsE-ft-9Hl"/>
+                            <constraint firstItem="A0v-ht-MKQ" firstAttribute="centerY" secondItem="j20-pP-mFi" secondAttribute="centerY" multiplier="0.75" id="fHP-bn-J4R"/>
+                            <constraint firstItem="KQG-Go-7i0" firstAttribute="centerX" secondItem="j20-pP-mFi" secondAttribute="centerX" id="iv1-46-eKC"/>
+                            <constraint firstItem="PQx-Dq-cfv" firstAttribute="top" secondItem="KQG-Go-7i0" secondAttribute="bottom" constant="10" id="zb9-rZ-Wst"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zic-K9-fII" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,6 +261,8 @@
     <resources>
         <image name="onboarding-address.png" width="108" height="156"/>
         <image name="onboarding-logo.png" width="468" height="60"/>
+        <image name="onboarding-therapist.png" width="198" height="162"/>
+        <image name="onboarding-treatment.png" width="183" height="153"/>
         <image name="onboarding-tutorial.png" width="296" height="296"/>
     </resources>
 </document>

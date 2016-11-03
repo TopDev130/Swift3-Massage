@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821A92071DCBCC6B00CDE752 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92061DCBCC6B00CDE752 /* KolodaView.swift */; };
+		821A92091DCBCC7A00CDE752 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92081DCBCC7A00CDE752 /* DraggableCardView.swift */; };
+		821A920B1DCBCC8200CDE752 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A920A1DCBCC8200CDE752 /* OverlayView.swift */; };
 		9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470811DCA6D600036C89A /* AppDelegate.swift */; };
 		9A3470841DCA6D600036C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470831DCA6D600036C89A /* ViewController.swift */; };
 		9A3470871DCA6D600036C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470851DCA6D600036C89A /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		821A92061DCBCC6B00CDE752 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
+		821A92081DCBCC7A00CDE752 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
+		821A920A1DCBCC8200CDE752 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		9A34707E1DCA6D600036C89A /* Massage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3470811DCA6D600036C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3470831DCA6D600036C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +168,9 @@
 		9A3470B11DCA6EFC0036C89A /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				821A920A1DCBCC8200CDE752 /* OverlayView.swift */,
+				821A92081DCBCC7A00CDE752 /* DraggableCardView.swift */,
+				821A92061DCBCC6B00CDE752 /* KolodaView.swift */,
 				9A3470B41DCA6F810036C89A /* Tutorial.storyboard */,
 				9A3470B61DCA70E60036C89A /* TutorialViewController.swift */,
 			);
@@ -338,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821A92091DCBCC7A00CDE752 /* DraggableCardView.swift in Sources */,
+				821A92071DCBCC6B00CDE752 /* KolodaView.swift in Sources */,
 				9A3470841DCA6D600036C89A /* ViewController.swift in Sources */,
+				821A920B1DCBCC8200CDE752 /* OverlayView.swift in Sources */,
 				9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */,
 				9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */,
 			);
