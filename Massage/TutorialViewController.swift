@@ -34,7 +34,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate, UIGestureR
         
         var pageIndex = 0
         
-        while pageIndex < 4 {
+        while pageIndex < 3 {
             let pageStoryboardName = "TutorialPage\(pageIndex+1)"
             
             let pageViewController = tutorialStoryboard.instantiateViewController(withIdentifier: pageStoryboardName)
@@ -67,6 +67,11 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate, UIGestureR
     
     func doSkipAction() {
         print("Skip function")
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let loginVC = storyBoard.instantiateViewController(withIdentifier: "AuthNavigationControllerID")
+        self.present(loginVC, animated:true, completion:nil)
+        
     }
     
     @IBAction func changePage(_ sender: AnyObject) {

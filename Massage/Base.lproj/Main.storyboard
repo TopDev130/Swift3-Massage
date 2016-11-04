@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,5 +25,88 @@
             </objects>
             <point key="canvasLocation" x="18" y="869"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FXE-Xy-kKM">
+            <objects>
+                <navigationController storyboardIdentifier="AuthNavigationControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="9hK-iI-M2b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E79-SK-p0d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I7f-Qa-lhR" kind="relationship" relationship="rootViewController" id="sKt-Kx-Vgp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gki-DV-aDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1644" y="-51"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="4Xj-T7-YVA">
+            <objects>
+                <viewController storyboardIdentifier="StartViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I7f-Qa-lhR" customClass="StartViewController" customModule="Massage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S8j-vo-ZPd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ha4-Fy-0gV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fEu-ag-lQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-relaxbg-full.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0lY-7g-kA1" userLabel="Back Image"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-relax.png" translatesAutoresizingMaskIntoConstraints="NO" id="ke6-LN-7zN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jsb-q4-8fk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And Relax..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWY-bE-kvN">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your chosen therapist will make their way to you. Sit back, relax and enjoy your treatment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PC-Rr-8V3">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ST-Di-09B">
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.7843137255" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c4f-jh-cen"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ST-Di-09B" firstAttribute="centerX" secondItem="fEu-ag-lQg" secondAttribute="centerX" id="9jD-53-ZOl"/>
+                            <constraint firstItem="6PC-Rr-8V3" firstAttribute="top" secondItem="KWY-bE-kvN" secondAttribute="bottom" constant="10" id="BBb-F4-6g4"/>
+                            <constraint firstItem="ke6-LN-7zN" firstAttribute="centerX" secondItem="fEu-ag-lQg" secondAttribute="centerX" id="Cdg-PL-z3i"/>
+                            <constraint firstItem="Ha4-Fy-0gV" firstAttribute="top" secondItem="0ST-Di-09B" secondAttribute="bottom" id="Jaf-rA-d2k"/>
+                            <constraint firstItem="0lY-7g-kA1" firstAttribute="trailing" secondItem="fEu-ag-lQg" secondAttribute="trailing" id="Jww-Pi-QbG"/>
+                            <constraint firstItem="KWY-bE-kvN" firstAttribute="top" secondItem="ke6-LN-7zN" secondAttribute="bottom" constant="10" id="KcQ-ds-QnS"/>
+                            <constraint firstItem="0lY-7g-kA1" firstAttribute="top" secondItem="S8j-vo-ZPd" secondAttribute="bottom" id="MXX-96-Imv"/>
+                            <constraint firstItem="6PC-Rr-8V3" firstAttribute="centerX" secondItem="fEu-ag-lQg" secondAttribute="centerX" id="aje-bD-0Dp"/>
+                            <constraint firstItem="ke6-LN-7zN" firstAttribute="top" secondItem="fEu-ag-lQg" secondAttribute="centerY" multiplier="0.75" constant="190" id="d5u-4S-dgi"/>
+                            <constraint firstItem="KWY-bE-kvN" firstAttribute="centerX" secondItem="fEu-ag-lQg" secondAttribute="centerX" id="dXU-bT-pIq"/>
+                            <constraint firstItem="0lY-7g-kA1" firstAttribute="leading" secondItem="fEu-ag-lQg" secondAttribute="leading" id="jih-gn-FKr"/>
+                            <constraint firstItem="0lY-7g-kA1" firstAttribute="bottom" secondItem="Ha4-Fy-0gV" secondAttribute="top" id="jjT-Hs-Twa"/>
+                            <constraint firstItem="0ST-Di-09B" firstAttribute="width" secondItem="fEu-ag-lQg" secondAttribute="width" id="nfg-du-jH2"/>
+                            <constraint firstItem="6PC-Rr-8V3" firstAttribute="width" secondItem="fEu-ag-lQg" secondAttribute="width" multiplier="0.9" id="r1y-kP-UlZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yK-Ug-1Qi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33X-lU-O18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-961" y="-52"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="onboarding-relax.png" width="192" height="150"/>
+        <image name="onboarding-relaxbg-full.jpg" width="1125" height="2001"/>
+    </resources>
 </document>
