@@ -245,74 +245,10 @@
             </objects>
             <point key="canvasLocation" x="2631" y="122"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Bcn-8f-3t0">
-            <objects>
-                <viewController storyboardIdentifier="TutorialPage4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="99v-zN-oms" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QjQ-bb-60v"/>
-                        <viewControllerLayoutGuide type="bottom" id="cwI-18-Avi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6sl-CK-8Kr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-relaxbg-full.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AuA-5R-lEn" userLabel="Back Image"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-relax.png" translatesAutoresizingMaskIntoConstraints="NO" id="bGc-9P-jKp">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3H5-J7-eSh"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And Relax..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvi-wF-eqD">
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your chosen therapist will make their way to you. Sit back, relax and enjoy your treatment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-c2-Tdz">
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPN-NH-qd0">
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.7843137255" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Moa-TA-IqK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="GET STARTED">
-                                    <color key="titleColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="AuA-5R-lEn" firstAttribute="top" secondItem="QjQ-bb-60v" secondAttribute="bottom" id="3Xu-hY-9vx"/>
-                            <constraint firstItem="DGs-c2-Tdz" firstAttribute="top" secondItem="zvi-wF-eqD" secondAttribute="bottom" constant="10" id="6jO-bC-G0z"/>
-                            <constraint firstItem="bGc-9P-jKp" firstAttribute="top" secondItem="6sl-CK-8Kr" secondAttribute="centerY" multiplier="0.75" constant="190" id="An0-gM-nwE"/>
-                            <constraint firstItem="AuA-5R-lEn" firstAttribute="trailing" secondItem="6sl-CK-8Kr" secondAttribute="trailing" id="Lea-pf-1ys"/>
-                            <constraint firstItem="zvi-wF-eqD" firstAttribute="top" secondItem="bGc-9P-jKp" secondAttribute="bottom" constant="10" id="QwR-37-c0Q"/>
-                            <constraint firstItem="DGs-c2-Tdz" firstAttribute="width" secondItem="6sl-CK-8Kr" secondAttribute="width" multiplier="0.9" id="ShH-A9-75J"/>
-                            <constraint firstItem="OPN-NH-qd0" firstAttribute="width" secondItem="6sl-CK-8Kr" secondAttribute="width" id="UDd-oh-hBc"/>
-                            <constraint firstItem="OPN-NH-qd0" firstAttribute="centerX" secondItem="6sl-CK-8Kr" secondAttribute="centerX" id="bU8-PR-b28"/>
-                            <constraint firstItem="bGc-9P-jKp" firstAttribute="centerX" secondItem="6sl-CK-8Kr" secondAttribute="centerX" id="dM0-1H-wiL"/>
-                            <constraint firstItem="AuA-5R-lEn" firstAttribute="bottom" secondItem="cwI-18-Avi" secondAttribute="top" id="hUp-ZT-Pc2"/>
-                            <constraint firstItem="DGs-c2-Tdz" firstAttribute="centerX" secondItem="6sl-CK-8Kr" secondAttribute="centerX" id="iAF-1Z-TdQ"/>
-                            <constraint firstItem="cwI-18-Avi" firstAttribute="top" secondItem="OPN-NH-qd0" secondAttribute="bottom" id="kR9-hG-G19"/>
-                            <constraint firstItem="AuA-5R-lEn" firstAttribute="leading" secondItem="6sl-CK-8Kr" secondAttribute="leading" id="rjd-iw-WdX"/>
-                            <constraint firstItem="zvi-wF-eqD" firstAttribute="centerX" secondItem="6sl-CK-8Kr" secondAttribute="centerX" id="yB1-AV-2AW"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n9g-fh-pgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3258" y="122"/>
-        </scene>
     </scenes>
     <resources>
         <image name="onboarding-address.png" width="108" height="156"/>
         <image name="onboarding-logo.png" width="468" height="60"/>
-        <image name="onboarding-relax.png" width="192" height="150"/>
-        <image name="onboarding-relaxbg-full.jpg" width="1125" height="2001"/>
         <image name="onboarding-therapist.png" width="198" height="162"/>
         <image name="onboarding-treatment.png" width="183" height="153"/>
         <image name="onboarding-tutorial.png" width="296" height="296"/>

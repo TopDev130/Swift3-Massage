@@ -3,9 +3,9 @@ use_frameworks!
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'Koloda', :git => 'https://github.com/Yalantis/Koloda.git', :branch => 'swift-3'
-
 target 'Massage' do
+	pod 'Koloda', :git => 'https://github.com/Yalantis/Koloda.git', :branch => 'swift-3'
+	pod 'DropDown'
 
 end
 
