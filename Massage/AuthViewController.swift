@@ -13,6 +13,8 @@ import DropDown
 class AuthViewController: UIViewController, UITextFieldDelegate {
     
     var isSignInView = false
+    var keyboardMoveHeight = 0
+    
     let selectCityDropDown = DropDown()
     
     @IBOutlet weak var SignUpTabClickedView: UIView!
@@ -30,6 +32,10 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var SignUpPassword: UITextField!
     @IBOutlet weak var SignUpConfirmPassword: UITextField!
     @IBOutlet weak var SelectCityButton: UIButton!
+    
+    @IBOutlet weak var TabViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ContainViewBottomConstraint: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +63,27 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
         setupSelectCityDropDown()
         
-        SignUpEmailAddress.UITextFieldDelegate = self
-        SignUpFullName.UITextFieldDelegate = self
-        SignUpConfirmPassword.UITextFieldDelegate = self
-        SignUpPassword.UITextFieldDelegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
-        SignInEmailAddress.UITextFieldDelegate = self
-        SignInPassword.UITextFieldDelegate = self
+        self.SignUpFullName.delegate = self
+        self.SignUpEmailAddress.delegate = self
+        self.SignUpPassword.delegate = self
+        self.SignUpConfirmPassword.delegate = self
+        
+        self.SignInEmailAddress.delegate = self
+        self.SignInPassword.delegate = self
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.SignInEmailAddress.resignFirstResponder()
+        self.SignInPassword.resignFirstResponder()
+        
+        self.SignUpFullName.resignFirstResponder()
+        self.SignUpEmailAddress.resignFirstResponder()
+        self.SignUpPassword.resignFirstResponder()
+        self.SignUpConfirmPassword.resignFirstResponder()
     }
     
     @IBAction func onBackButtonClicked(_ sender: AnyObject) {
@@ -92,7 +112,30 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         selectCityDropDown.show()
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.SignUpFullName {
+            self.SignUpEmailAddress.becomeFirstResponder()
+        }
+        if textField == self.SignUpEmailAddress {
+            self.SignUpPassword.becomeFirstResponder()
+        }
+        if textField == self.SignUpPassword {
+            self.SignUpConfirmPassword.becomeFirstResponder()
+        }
+        if textField == self.SignUpConfirmPassword {
+            textField.resignFirstResponder()
+        }
+        
+        if textField == self.SignInEmailAddress {
+            self.SignInPassword.becomeFirstResponder()
+        }
+        if textField == self.SignInPassword {
+            textField.resignFirstResponder()
+            //go to login
+        }
+        
+        return true
+    }
     
     func setupSelectCityDropDown() {
         selectCityDropDown.anchorView = SelectCityButton
@@ -102,6 +145,35 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
         selectCityDropDown.selectionAction = { [unowned self] (index, item) in
             self.SelectCityButton.setTitle(item, for: .normal)
+        }
+    }
+    
+    func keyboardDidShow(notification: NSNotification) {
+        
+        let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
+        
+        if self.TabViewTopConstraint.constant==0 {
+            if self.isSignInView == true {
+                UIView.animate(withDuration: 0.1, animations: {() -> Void in
+                    self.TabViewTopConstraint.constant = self.TabViewTopConstraint.constant - (keyboardSize?.height)!/4
+                    self.ContainViewBottomConstraint.constant = self.ContainViewBottomConstraint.constant + (keyboardSize?.height)!/4
+                })
+            } else {
+                UIView.animate(withDuration: 0.1, animations: {() -> Void in
+                    self.TabViewTopConstraint.constant = self.TabViewTopConstraint.constant - (keyboardSize?.height)!/2
+                    self.ContainViewBottomConstraint.constant = self.ContainViewBottomConstraint.constant + (keyboardSize?.height)!/2
+                })
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        
+        if self.TabViewTopConstraint.constant != 0 {
+            UIView.animate(withDuration: 0.1, animations: {() -> Void in
+                self.TabViewTopConstraint.constant = 0
+                self.ContainViewBottomConstraint.constant = 0
+            })
         }
     }
 }
