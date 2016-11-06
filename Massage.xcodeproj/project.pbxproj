@@ -23,6 +23,7 @@
 		821A92261DCBEB2300CDE752 /* card8.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921D1DCBEB2300CDE752 /* card8.png */; };
 		821A92271DCBEB2300CDE752 /* card9.png in Resources */ = {isa = PBXBuildFile; fileRef = 821A921E1DCBEB2300CDE752 /* card9.png */; };
 		821A92291DCBF26300CDE752 /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A92281DCBF26300CDE752 /* TherapistViewController.swift */; };
+		8269ADEE1DCDC078004C79D7 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269ADED1DCDC078004C79D7 /* AddressViewController.swift */; };
 		9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470811DCA6D600036C89A /* AppDelegate.swift */; };
 		9A3470841DCA6D600036C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3470831DCA6D600036C89A /* ViewController.swift */; };
 		9A3470871DCA6D600036C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3470851DCA6D600036C89A /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		821A921D1DCBEB2300CDE752 /* card8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card8.png; sourceTree = "<group>"; };
 		821A921E1DCBEB2300CDE752 /* card9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card9.png; sourceTree = "<group>"; };
 		821A92281DCBF26300CDE752 /* TherapistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewController.swift; sourceTree = "<group>"; };
+		8269ADED1DCDC078004C79D7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		9A34707E1DCA6D600036C89A /* Massage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Massage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3470811DCA6D600036C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3470831DCA6D600036C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,14 @@
 			name = treatment;
 			sourceTree = "<group>";
 		};
+		8269ADEC1DCDC031004C79D7 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				8269ADED1DCDC078004C79D7 /* AddressViewController.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		96BA3C080740C211539DC551 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		9A3470B01DCA6EDB0036C89A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8269ADEC1DCDC031004C79D7 /* Location */,
 				82049D281DCC701300C16863 /* Authentication */,
 				9A3470B11DCA6EFC0036C89A /* Tutorial */,
 			);
@@ -497,6 +508,7 @@
 				9A3470841DCA6D600036C89A /* ViewController.swift in Sources */,
 				9A3470B71DCA70E60036C89A /* TutorialViewController.swift in Sources */,
 				82049D2E1DCCF85E00C16863 /* ForgotViewController.swift in Sources */,
+				8269ADEE1DCDC078004C79D7 /* AddressViewController.swift in Sources */,
 				9A3470821DCA6D600036C89A /* AppDelegate.swift in Sources */,
 				821A92101DCBE27400CDE752 /* CustomKolodaView.swift in Sources */,
 				82049D2A1DCC703900C16863 /* AuthViewController.swift in Sources */,

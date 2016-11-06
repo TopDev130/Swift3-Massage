@@ -17,8 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let viewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateInitialViewController()
-        self.window?.rootViewController = viewController
+//        let viewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateInitialViewController()
+//        self.window?.rootViewController = viewController
+        
+        let startViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthNavigationControllerID")
+        self.window?.rootViewController = startViewController
+        
         return true
     }
 

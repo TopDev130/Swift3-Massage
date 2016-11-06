@@ -15,7 +15,21 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     var isSignInView = false
     var keyboardMoveHeight = 0
     
+    var selectedUIColor = UIColor(red: 254/255.0, green: 194/255.0, blue: 0.0, alpha: 1.0)
+    var unSelectedUIColor = UIColor(red: 231/255.0, green: 233/255.0, blue: 238/255.0, alpha: 1.0)
+    
+    var unfocusedFontColor = UIColor(red: 73/255.0, green: 72/255.0, blue: 92/255.0, alpha: 0.2).cgColor
+    var fontColor = UIColor(red: 73/255.0, green: 72/255.0, blue: 92/255.0, alpha: 1.0)
+    
     let selectCityDropDown = DropDown()
+    
+    @IBOutlet weak var SignInEmailSelectView: UIView!
+    @IBOutlet weak var SignInPasswordSelectView: UIView!
+    
+    @IBOutlet weak var SignUpFullNameSelectView: UIView!
+    @IBOutlet weak var SignUpEmailSelectView: UIView!
+    @IBOutlet weak var SignUpPasswordSelectView: UIView!
+    @IBOutlet weak var SignUpConfirmSelectView: UIView!
     
     @IBOutlet weak var SignUpTabClickedView: UIView!
     @IBOutlet weak var SignInTabClickedView: UIView!
@@ -33,9 +47,17 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var SignUpConfirmPassword: UITextField!
     @IBOutlet weak var SelectCityButton: UIButton!
     
+    @IBOutlet weak var SignUpFullNameView: UIView!
+    @IBOutlet weak var SingUpEmailView: UIView!
+    @IBOutlet weak var SignUpPasswordView: UIView!
+    @IBOutlet weak var SignUpConfirmView: UIView!
+    @IBOutlet weak var SignUpCityView: UIView!
+    @IBOutlet weak var SignInEmailView: UIView!
+    @IBOutlet weak var SignInPasswordView: UIView!
+    
+    
     @IBOutlet weak var TabViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var ContainViewBottomConstraint: NSLayoutConstraint!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +85,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
         setupSelectCityDropDown()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
         self.SignUpFullName.delegate = self
@@ -76,14 +98,13 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.SignInEmailAddress.resignFirstResponder()
-        self.SignInPassword.resignFirstResponder()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.SignUpFullName.resignFirstResponder()
-        self.SignUpEmailAddress.resignFirstResponder()
-        self.SignUpPassword.resignFirstResponder()
-        self.SignUpConfirmPassword.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        unfocusedTextField()
     }
     
     @IBAction func onBackButtonClicked(_ sender: AnyObject) {
@@ -96,7 +117,8 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         self.SignInInputView.isHidden = true
         self.SignUpInputView.isHidden = false
         self.isSignInView = false
-        self.SignUpButtonView.titleLabel?.text = "SIGN UP"
+        self.SignUpButtonView.setTitle("SIGN UP", for: UIControlState.normal)
+        unfocusedTextField()
     }
     
     @IBAction func onSignInTabClicked(_ sender: AnyObject) {
@@ -105,36 +127,118 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         self.SignInInputView.isHidden = false
         self.SignUpInputView.isHidden = true
         self.isSignInView = true
-        self.SignUpButtonView.titleLabel?.text = "SIGN IN"
+        self.SignUpButtonView.setTitle("SIGN IN", for: UIControlState.normal)
+        unfocusedTextField()
     }
     
     @IBAction func onSelectCityButtonClicked(_ sender: AnyObject) {
         selectCityDropDown.show()
+        unfocusedTextField()
+    }
+    
+    func setTextFieldMask() {
+        self.SignUpFullNameSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignUpEmailSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignUpPasswordSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignUpConfirmSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignInEmailSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignInPasswordSelectView.backgroundColor = self.unSelectedUIColor
+
+        self.SignUpFullNameView.layer.opacity = 0.2
+        self.SingUpEmailView.layer.opacity = 0.2
+        self.SignUpPasswordView.layer.opacity = 0.2
+        self.SignUpConfirmView.layer.opacity = 0.2
+        self.SignUpCityView.layer.opacity = 0.2
+        self.SignInPasswordView.layer.opacity = 0.2
+        self.SignInEmailView.layer.opacity = 0.2
+        
+    }
+    
+    @IBAction func onTextFieldTouchDown(_ sender: AnyObject) {
+        
+        setTextFieldMask()
+        
+        if sender as! NSObject == self.SignUpFullName {
+            self.SignUpFullNameSelectView.backgroundColor = self.selectedUIColor
+            self.SignUpFullNameView.layer.opacity = 1
+        }
+        if sender as! NSObject == self.SignUpEmailAddress {
+            self.SignUpEmailSelectView.backgroundColor = self.selectedUIColor
+            self.SingUpEmailView.layer.opacity = 1
+        }
+        if sender as! NSObject == self.SignUpPassword {
+            self.SignUpPasswordSelectView.backgroundColor = self.selectedUIColor
+            self.SignUpPasswordView.layer.opacity = 1
+        }
+        if sender as! NSObject == self.SignUpConfirmPassword {
+            self.SignUpConfirmSelectView.backgroundColor = self.selectedUIColor
+            self.SignUpConfirmView.layer.opacity = 1
+        }
+        if sender as! NSObject == self.SignInEmailAddress {
+            self.SignInEmailSelectView.backgroundColor = self.selectedUIColor
+            self.SignInEmailView.layer.opacity = 1
+        }
+        if sender as! NSObject == self.SignInPassword {
+            self.SignInPasswordSelectView.backgroundColor = self.selectedUIColor
+            self.SignInPasswordView.layer.opacity = 1
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.SignUpFullName {
             self.SignUpEmailAddress.becomeFirstResponder()
+            self.SignUpFullNameSelectView.backgroundColor = self.unSelectedUIColor
         }
         if textField == self.SignUpEmailAddress {
             self.SignUpPassword.becomeFirstResponder()
+            self.SignUpEmailSelectView.backgroundColor = self.unSelectedUIColor
         }
         if textField == self.SignUpPassword {
             self.SignUpConfirmPassword.becomeFirstResponder()
+            self.SignUpPasswordSelectView.backgroundColor = self.unSelectedUIColor
         }
         if textField == self.SignUpConfirmPassword {
             textField.resignFirstResponder()
+            self.SignUpConfirmSelectView.backgroundColor = self.unSelectedUIColor
         }
         
         if textField == self.SignInEmailAddress {
             self.SignInPassword.becomeFirstResponder()
+            self.SignInEmailSelectView.backgroundColor = self.unSelectedUIColor
         }
         if textField == self.SignInPassword {
             textField.resignFirstResponder()
+            self.SignInPasswordSelectView.backgroundColor = self.unSelectedUIColor
             //go to login
         }
         
         return true
+    }
+    
+    func unfocusedTextField() {
+        self.SignInEmailAddress.resignFirstResponder()
+        self.SignInPassword.resignFirstResponder()
+        
+        self.SignUpFullName.resignFirstResponder()
+        self.SignUpEmailAddress.resignFirstResponder()
+        self.SignUpPassword.resignFirstResponder()
+        self.SignUpConfirmPassword.resignFirstResponder()
+        
+        self.SignUpFullNameSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignUpEmailSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignUpPasswordSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignUpConfirmSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignInEmailSelectView.backgroundColor = self.unSelectedUIColor
+        self.SignInPasswordSelectView.backgroundColor = self.unSelectedUIColor
+        
+        self.SignUpFullNameView.layer.opacity = 1
+        self.SingUpEmailView.layer.opacity = 1
+        self.SignUpPasswordView.layer.opacity = 1
+        self.SignUpConfirmView.layer.opacity = 1
+        self.SignUpCityView.layer.opacity = 1
+        self.SignInPasswordView.layer.opacity = 1
+        self.SignInEmailView.layer.opacity = 1
+
     }
     
     func setupSelectCityDropDown() {
@@ -148,7 +252,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func keyboardDidShow(notification: NSNotification) {
+    func keyboardWillShow(notification: NSNotification) {
         
         let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
         

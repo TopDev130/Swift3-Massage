@@ -4,7 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Analytics.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DropDown.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GestureRecognizerClosures.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>KVNProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,7 +34,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Localize-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Massage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>URLNavigator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +82,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>066BB229A329E780C5EC5BF9CB796A22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1CC71F9CD5545E32178492A81594B457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>20151774CE2F5FA6B8126D4F5ED1C5FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>28324D45B9B7178CA82ED00AFEAD988F</key>
+		<key>36C38AA0B9A336FC3C398ADEDAA35884</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BE98CC9F4FEA5D4E4417F13FE6C313B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4639FF81D97257EA7EAE0BD36A9BE62F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +117,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>55BDF04E160106A561864D4D81A6A018</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7568ABBEC5C655B3BC76918AF95FFCE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86433867888749E4CF5A5AEC59DD39D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9BDD0E42347ED8EDEA19928B85B79254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB2086799B0AB020E1AA5BC2CB146EEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F49684E1F9BCAED3451C73A63AA58709</key>
 		<dict>
 			<key>primary</key>
 			<true/>

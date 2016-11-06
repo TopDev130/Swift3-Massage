@@ -89,13 +89,35 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Analytics/Analytics.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DropDown/DropDown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GestureRecognizerClosures/GestureRecognizerClosures.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KVNProgress/KVNProgress.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Koloda/Koloda.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Localize-Swift/Localize_Swift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/URLNavigator/URLNavigator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Analytics/Analytics.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DropDown/DropDown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GestureRecognizerClosures/GestureRecognizerClosures.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KVNProgress/KVNProgress.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Koloda/Koloda.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Localize-Swift/Localize_Swift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SideMenu/SideMenu.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/URLNavigator/URLNavigator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -1,28 +1,110 @@
 PODS:
+  - Alamofire (4.0.1)
+  - Analytics (3.1.1)
   - DropDown (2)
+  - GestureRecognizerClosures (3.0.0)
+  - GoogleMaps (2.1.0):
+    - GoogleMaps/Maps (= 2.1.0)
+  - GoogleMaps/Base (2.1.0)
+  - GoogleMaps/Maps (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - GooglePlacePicker (2.1.0):
+    - GoogleMaps (= 2.1.0)
+    - GooglePlaces (= 2.1.0)
+  - GooglePlaces (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
   - Koloda (3.1.2):
     - pop (~> 1.0)
+  - KVNProgress (2.3.1)
+  - Localize-Swift (1.6)
+  - ObjectMapper (2.2.1)
   - pop (1.0.9)
+  - Realm (2.0.3):
+    - Realm/Headers (= 2.0.3)
+  - Realm/Headers (2.0.3)
+  - RealmSwift (2.0.3):
+    - Realm (= 2.0.3)
+  - SideMenu (2.0.0)
+  - SwiftyJSON (3.1.1)
+  - URLNavigator (1.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Analytics (~> 3.1.0)
   - DropDown
+  - GestureRecognizerClosures (~> 3)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
   - Koloda (from `https://github.com/Yalantis/Koloda.git`, branch `swift-3`)
+  - KVNProgress
+  - Localize-Swift (~> 1.6)
+  - ObjectMapper (~> 2.1)
+  - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+  - SideMenu (from `https://github.com/jonkykong/SideMenu.git`, branch `swift3`)
+  - SwiftyJSON
+  - URLNavigator (from `https://github.com/devxoul/URLNavigator.git`, branch `master`)
 
 EXTERNAL SOURCES:
   Koloda:
     :branch: swift-3
     :git: https://github.com/Yalantis/Koloda.git
+  Realm:
+    :branch: master
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :branch: master
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  SideMenu:
+    :branch: swift3
+    :git: https://github.com/jonkykong/SideMenu.git
+  URLNavigator:
+    :branch: master
+    :git: https://github.com/devxoul/URLNavigator.git
+    :submodules: true
 
 CHECKOUT OPTIONS:
   Koloda:
     :commit: 2aea10e0ae955814e38fc815ff38c0b20fb126ea
     :git: https://github.com/Yalantis/Koloda.git
+  Realm:
+    :commit: eb4c36f2b7e287f82bb1ca67602fff20ac030a1a
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :commit: eb4c36f2b7e287f82bb1ca67602fff20ac030a1a
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  SideMenu:
+    :commit: 2f948475be9bc620bdbc465e844b2b704072e3ea
+    :git: https://github.com/jonkykong/SideMenu.git
+  URLNavigator:
+    :commit: 4b0290592e607b831f20ae5dc3a07601c1a46001
+    :git: https://github.com/devxoul/URLNavigator.git
+    :submodules: true
 
 SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Analytics: 96ad217bd99f5c87d16cc97c1f0039231d935f99
   DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  GestureRecognizerClosures: a57e37768b1b28d534c13f5126916eb917519601
+  GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
+  GooglePlacePicker: a2228b447d10008bcb765a6a081f415e8599e5d4
+  GooglePlaces: 16e96266483b8010e9f275399403647978523c86
   Koloda: 5aee353329cd1605540f1215a4c1975481dc7a37
+  KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
+  Localize-Swift: d34c70b34ffb1468b2942c3f0b5c1dfd9119877e
+  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Realm: 5f008bfe3c8c47142eddfc30b8c1584cde22db24
+  RealmSwift: 79a9bc83e7ef4fbde17e0f303c5fadb99264a6be
+  SideMenu: 711f7f8d3a7656fcdb4048200a173a23a3c6e70b
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  URLNavigator: 830d156b8624402850ff14ec96222cfc51a05d42
 
-PODFILE CHECKSUM: ccbb34564376da6bef2fc6f3a548800970f8b701
+PODFILE CHECKSUM: 62f959305a3e3a9a03de8adf3d3e7aa78682f16c
 
 COCOAPODS: 1.2.0.beta.1
