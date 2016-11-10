@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,13 +18,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        let viewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateInitialViewController()
-//        self.window?.rootViewController = viewController
+        let viewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateInitialViewController()
+        self.window?.rootViewController = viewController
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
-        let startViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthNavigationControllerID")
-        self.window?.rootViewController = startViewController
-        
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            app,
+            open: url as URL!,
+            sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
+            annotation: options[UIApplicationOpenURLOptionsKey.annotation]
+        )
+    }
+    
+    public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            application,
+            open: url as URL!,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -48,6 +63,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    static func topMostController() -> UIViewController {
+        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
+        while (topController.presentedViewController != nil) {
+            if let presented = topController.presentedViewController {
+                topController = presented
+            }
+        }
+        return topController
+    }
 }
 

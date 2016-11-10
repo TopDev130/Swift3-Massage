@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Light.otf">
+            <string>Gotham-Light</string>
+        </array>
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomSpecialityView" customModule="Massage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uGC-K7-P4a" userLabel="SpecialityImage"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rm1-8S-ESS">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbc-Il-Ywa" userLabel="Treatment Name Label">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                            <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhv-Z2-dsm" userLabel="Treatment Description Label">
+                            <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                            <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jbc-Il-Ywa" firstAttribute="top" secondItem="rm1-8S-ESS" secondAttribute="top" constant="20" id="Cis-3O-dAg"/>
+                        <constraint firstItem="rhv-Z2-dsm" firstAttribute="width" secondItem="rm1-8S-ESS" secondAttribute="width" multiplier="0.9" id="EOw-9T-Yuq"/>
+                        <constraint firstItem="Jbc-Il-Ywa" firstAttribute="leading" secondItem="rm1-8S-ESS" secondAttribute="leading" constant="20" id="LCJ-3a-PxC"/>
+                        <constraint firstItem="rhv-Z2-dsm" firstAttribute="top" secondItem="Jbc-Il-Ywa" secondAttribute="bottom" constant="7" id="XeD-ZO-Zxc"/>
+                        <constraint firstItem="rhv-Z2-dsm" firstAttribute="centerX" secondItem="rm1-8S-ESS" secondAttribute="centerX" id="epE-To-yQz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uGC-K7-P4a" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="8Pt-KK-GLb"/>
+                <constraint firstItem="rm1-8S-ESS" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Clw-tr-rae"/>
+                <constraint firstItem="uGC-K7-P4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K42-Uh-kHk"/>
+                <constraint firstItem="rm1-8S-ESS" firstAttribute="top" secondItem="uGC-K7-P4a" secondAttribute="bottom" id="YN8-4q-Kv4"/>
+                <constraint firstItem="rm1-8S-ESS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="b0D-cr-lQY"/>
+                <constraint firstItem="rm1-8S-ESS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bpc-KF-Jam"/>
+                <constraint firstItem="uGC-K7-P4a" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dPm-vu-KQe"/>
+                <constraint firstItem="uGC-K7-P4a" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.43" id="uzs-X6-bln"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="9"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="treatmentDescription" destination="rhv-Z2-dsm" id="BBv-72-GqS"/>
+                <outlet property="treatmentDetailView" destination="rm1-8S-ESS" id="W4e-X7-bEG"/>
+                <outlet property="treatmentImage" destination="uGC-K7-P4a" id="TAC-Eh-48Q"/>
+                <outlet property="treatmentName" destination="Jbc-Il-Ywa" id="8eE-Qh-7oE"/>
+            </connections>
+            <point key="canvasLocation" x="51.5" y="-113"/>
+        </view>
+    </objects>
+</document>

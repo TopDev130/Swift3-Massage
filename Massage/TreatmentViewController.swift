@@ -10,29 +10,49 @@ import Foundation
 import UIKit
 import Koloda
 import pop
+import KVNProgress
+import Localize_Swift
 
-private let numberOfCards: Int = 9
 private let frameAnimationSpringBounciness: CGFloat = 9
 private let frameAnimationSpringSpeed: CGFloat = 16
-private let kolodaCountOfVisibleCards = 2
-private let kolodaAlphaValueSemiTransparent: CGFloat = 0.1
+private let kolodaCountOfVisibleCards = 3
+private let kolodaAlphaValueSemiTransparent: CGFloat = 0.6
 
 class TreatmentViewController: UIViewController {
     
-    @IBOutlet weak var treatmentView: KolodaView!
+    @IBOutlet weak var treatmentView: CustomSpecialityView!
+    @IBOutlet weak var SelectTreatmentLabel: UILabel!
+    @IBOutlet weak var SelectDescriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SelectTreatmentLabel.text = "SelectTreatment".localized()
+        SelectDescriptionLabel.text = "SelectTreatmentDescription".localized()
         
         treatmentView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
         treatmentView.countOfVisibleCards = kolodaCountOfVisibleCards
         treatmentView.delegate = self
         treatmentView.dataSource = self
-        treatmentView.animator = BackgroundKolodaAnimator(koloda: treatmentView)
+//        treatmentView.animator = BackgroundKolodaAnimator(koloda: treatmentView)
         
         self.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
-
+        
+        if SpecialityManager.sharedInstance.currentSpecialites.value.count == 0 {
+//            KVNProgress.show(withStatus: "", on: self.view)
+            SpecialityManager.sharedInstance.loadSpecialities(completionHandler: { [weak self] errorOpt in
+                Loader.hide()
+                if let error = errorOpt {
+                    ErrorDisplay.displayAPIError(error, from: self)
+                    print("error ==", error)
+                } else {
+                    self?.treatmentView.reloadData()
+                }
+                })
+        } else {
+            Loader.hide()
+        }
     }
-    
 }
 
 //MARK: KolodaViewDelegate
@@ -74,12 +94,34 @@ extension TreatmentViewController: KolodaViewDelegate {
 extension TreatmentViewController: KolodaViewDataSource {
     
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return numberOfCards
+        return SpecialityManager.sharedInstance.currentSpecialites.value.count
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         
-        return UIImageView(image: UIImage(named: "card\(index + 1).png"))
+        let treatmentView = Bundle.main.loadNibNamed("CustomSpecialityView", owner: self, options: nil)?.first as! CustomSpecialityView
+        
+        let treatment = SpecialityManager.sharedInstance.currentSpecialites.value[Int(index)]
+        
+        treatmentView.treatmentName.text = treatment.name.localized()
+        treatmentView.treatmentDescription.text = treatment.descriptionStr.localized()
+        treatmentView.treatmentImage.image = UIImage(data: treatment.imgData!)
+        
+        treatmentView.treatmentImage.layer.masksToBounds = true
+        let rectShape = CAShapeLayer()
+        rectShape.bounds = treatmentView.treatmentImage.frame
+        rectShape.position = treatmentView.treatmentImage.center
+        rectShape.path = UIBezierPath(roundedRect: treatmentView.treatmentImage.bounds, byRoundingCorners: [.topRight, .topLeft], cornerRadii: CGSize(width: 10, height: 10)).cgPath
+        treatmentView.treatmentImage.layer.mask = rectShape
+        
+        treatmentView.treatmentDetailView.layer.masksToBounds = true
+        let rectShape1 = CAShapeLayer()
+        rectShape1.bounds = treatmentView.treatmentDetailView.frame
+        rectShape1.position = treatmentView.treatmentDetailView.center
+        rectShape1.path = UIBezierPath(roundedRect: treatmentView.treatmentDetailView.bounds, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: 10, height: 10)).cgPath
+        treatmentView.treatmentDetailView.layer.mask = rectShape1
+        
+        return treatmentView
     }
     
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {

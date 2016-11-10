@@ -21,10 +21,14 @@ target 'Massage' do
 	pod 'GooglePlaces'
 	pod 'GooglePlacePicker'
 	pod 'GoogleMaps'
+	pod 'FacebookCore'
+	pod 'FacebookLogin'
+	pod 'FacebookShare'
 
 	pod 'Koloda', :git => 'https://github.com/Yalantis/Koloda.git', :branch => 'swift-3'
 	pod 'DropDown'
 	pod 'SideMenu', :git => 'https://github.com/jonkykong/SideMenu.git', :branch => 'swift3'
+	pod 'ReactiveCocoa', :git => 'https://github.com/ReactiveCocoa/ReactiveCocoa.git'
 
 end
 

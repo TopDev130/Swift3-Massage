@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  b2c-ios
+
+  Created by Giles Williams on 17/10/2016.
+  Copyright © 2016 Urban Massage. All rights reserved.
+ */
+
+"BookOptionsBar1WorkerLabel" = "1 Therapist";
+"BookOptionsBar2WorkersLabel" = "2 Therapists";
+
+"BookOptionsBar1PersonLabel" = "1 Person";
+"BookOptionsBar2PeopleLabel" = "2 People";
+
+"BookOptionsBarDuration1Label" = "60 Min";
+"BookOptionsBarDuration11Label" = "90 Min";
+"BookOptionsBarDuration21Label" = "120 Min";
+"BookOptionsBarDuration1ShortLabel" = "60";
+"BookOptionsBarDuration11ShortLabel" = "90";
+"BookOptionsBarDuration21ShortLabel" = "120";
+
+"BookScreenNearbyTherapistsLabel" = "Nearby Therapists";
+"BookScreenSeeAllWorkersButtonLabel" = "see all";
+"BookScreenTreatmentsHeaderLabel" = "treatments";
+
+"BookWorkersSearchScreenTitleLabel" = "All Therapists";
+"BookWorkersSearchScreenFilterButtonLabel" = "filter";
+
+"BookWorkerScreenTitleLabel" = "New Appointment";
+
+"AddressPickerScreenAddTitleLabel" = "Add Address";
+"AddressPickerScreenEditTitleLabel" = "Edit Address";
+"AddressPickerScreenLoadingButtonTitle" = "LOADING";
+"AddressPickerScreenSaveExistingAddressButtonTitle" = "UPDATE ADDRESS";
+"AddressPickerScreenAddNewAddressButtonTitle" = "ADD ADDRESS";
+
+"SpecialityCellBookButtonLabel" = "BOOK";
+"WorkerCellBookButtonLabel" = "BOOK";
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+
+///On-boarding Page
+
+"EnterYourAddress" = "Enter Your Address";
+"EnterYourAddressDescription" = "Tell us where you are, so we can find the best therapists near you";
+"SelectTreatment" = "Select Treatment";
+"SelectTreatmentDescription" = "Select a date and time that's convenient for you, the massage you'd like and your therapist.";
+"SelectTherapist" = "Select Therapist";
+"SelectTherapistDescription" = "With 500+ therapists, background checked and reviewed by real customers like you, you can rest assured to find one that will suit your needs.";
+"RelaxLabel" = "And Relax...";
+"GetStartedDescription" = "Your chosen therapist will make their way to you. Sit back, relax and enjoy your treatment.";
+"Skip" = "Skip";
+"GetStartedButton" = "GET STARTED";
+"CreateAccountTab" = "CREATE ACCOUNT";
+"LoginTab" = "LOG IN";
+"facebookLoginButton" = "CONNECT WITH FACEBOOK";
+"OR" = "OR";
+"EnterFullName" = "Enter Your Full Name";
+"CreatePassword" = "Create a Password";
+"ConfirmPassword" = "Confirm Password";
+"SelectYourCity" = "Select Your City";
+"SupportButton" = "Support";
+"TermsButton" = "Terms & Conditions";
+"PrivacyButton" = "Privacy Policy";
+"signupButton" = "SIGN UP";
+"signinButton" = "SIGN IN";
+"selectCityActionsheetTitle" = "select your home city";
+"EmailAddress" = "Email Address";
+"Password" = "Password";
+"emailInputErrorTitle" = "Email Input Error!";
+"emailAddressInvalidMessage" = "Email Address is invalid!";
+"passwordInputErrorTitle" = "Password Input Error!";
+"passwordInputErrorMessage" = "Password must have at least 6 characters!";
+"passwordInputNotMatchingMessage" = "Password must be matching with confirm password!";
+"fullNameInputErrorTitle" = "Name Input Error!";
+"fullNameInputErrorMessage" = "Your name mustn't be empty!";
+"forgotPasswordButton" = "Don't remember?";
+"ForgotPasswordLabel" = "Forgot your password?";
+"ForgotPasswordTitle" = "Forgot Password";
+"ForgotPasswordDescription" = "Enter your email below to receive your password reset instructions.";
+"EnterEmail" = "Enter your email";
+"SendIntroButton" = "SEND INSTRUCTIONS";
+"checkEmailTitle" = "Please check your email";
+"sendPasswordSuccessfully" = "We successfully sent you a link to reset your password.";
+
+/// Home Page
+"nearByLabel" = "Nearby Therapists";
+"nextDate7days" = "Next 7 days";
+"seeAll" = "See All";
+

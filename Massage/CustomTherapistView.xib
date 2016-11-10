@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTherapistView" customModule="Massage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nw-ud-gk9" userLabel="Container View">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDy-6O-qo8" userLabel="Profile Image">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="5r4-Y9-ti0"/>
+                                <constraint firstAttribute="width" constant="72" id="dqO-yL-lb5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-13-Nnb" userLabel="Name">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="19"/>
+                            <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZN-Jn-vQc" userLabel="Rating View">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="9UH-bi-RJL" userLabel="Star Image">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="11" id="Ba3-5U-d3m"/>
+                                        <constraint firstAttribute="height" constant="11" id="HbJ-xj-93Q"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6F-yb-hgu" userLabel="Star Label">
+                                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="13"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="V6F-yb-hgu" firstAttribute="centerY" secondItem="8ZN-Jn-vQc" secondAttribute="centerY" id="Fma-y9-bLi"/>
+                                <constraint firstAttribute="width" constant="49" id="IEi-NI-zkR"/>
+                                <constraint firstItem="9UH-bi-RJL" firstAttribute="centerY" secondItem="8ZN-Jn-vQc" secondAttribute="centerY" id="SaQ-Hq-kan"/>
+                                <constraint firstItem="9UH-bi-RJL" firstAttribute="centerX" secondItem="8ZN-Jn-vQc" secondAttribute="leading" constant="12" id="h7P-hX-UZt"/>
+                                <constraint firstItem="V6F-yb-hgu" firstAttribute="leading" secondItem="9UH-bi-RJL" secondAttribute="trailing" constant="3" id="iN6-uW-TDw"/>
+                                <constraint firstAttribute="height" constant="24" id="ph5-b6-Sbt"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEd-pN-s8n" userLabel="Description Label">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="13"/>
+                            <color key="textColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pEq-13-Nnb" firstAttribute="top" secondItem="5Nw-ud-gk9" secondAttribute="top" constant="9" id="3BE-yj-ubP"/>
+                        <constraint firstItem="tEd-pN-s8n" firstAttribute="top" secondItem="RDy-6O-qo8" secondAttribute="bottom" constant="23" id="CcZ-tp-Rxh"/>
+                        <constraint firstItem="RDy-6O-qo8" firstAttribute="top" secondItem="5Nw-ud-gk9" secondAttribute="top" id="ICs-Ge-94h"/>
+                        <constraint firstItem="tEd-pN-s8n" firstAttribute="leading" secondItem="RDy-6O-qo8" secondAttribute="leading" id="IOf-4s-Sgu"/>
+                        <constraint firstItem="8ZN-Jn-vQc" firstAttribute="leading" secondItem="pEq-13-Nnb" secondAttribute="leading" id="Lv8-Qv-SSr"/>
+                        <constraint firstItem="pEq-13-Nnb" firstAttribute="leading" secondItem="RDy-6O-qo8" secondAttribute="trailing" constant="14" id="Rvd-VG-Jhl"/>
+                        <constraint firstItem="RDy-6O-qo8" firstAttribute="leading" secondItem="5Nw-ud-gk9" secondAttribute="leading" id="W2P-CD-EHL"/>
+                        <constraint firstItem="8ZN-Jn-vQc" firstAttribute="top" secondItem="pEq-13-Nnb" secondAttribute="bottom" constant="9" id="hn7-pO-3XQ"/>
+                        <constraint firstItem="tEd-pN-s8n" firstAttribute="width" secondItem="5Nw-ud-gk9" secondAttribute="width" id="vvi-hD-gLO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Nw-ud-gk9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="33i-el-Kfy"/>
+                <constraint firstItem="5Nw-ud-gk9" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.64" id="MKy-F1-ZM9"/>
+                <constraint firstItem="5Nw-ud-gk9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VKM-li-M8R"/>
+                <constraint firstItem="5Nw-ud-gk9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="vbL-CS-Kah"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="7"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionLabel" destination="tEd-pN-s8n" id="yF1-nm-deP"/>
+                <outlet property="nameLabel" destination="pEq-13-Nnb" id="9Y3-ck-fkQ"/>
+                <outlet property="profileImageView" destination="RDy-6O-qo8" id="PcS-Ag-Z0Y"/>
+                <outlet property="starLabel" destination="V6F-yb-hgu" id="NAd-xB-5Rk"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Star" width="7" height="6"/>
+    </resources>
+</document>

@@ -16,10 +16,36 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb426391724167178</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>426391724167178</string>
+	<key>FacebookDisplayName</key>
+	<string>Urban Massage</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Give us access to your location during bookings to help you find your address</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Gotham-Medium.otf</string>
+		<string>Gotham-Bold.otf</string>
+		<string>Gotham-Light.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -32,12 +58,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbauth2</string>
+    </array>
 </dict>
 </plist>

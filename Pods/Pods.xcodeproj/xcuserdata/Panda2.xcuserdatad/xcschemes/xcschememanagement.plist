@@ -14,7 +14,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DropDown.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FacebookCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FacebookLogin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FacebookShare.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -49,12 +84,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -82,7 +132,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>066BB229A329E780C5EC5BF9CB796A22</key>
+		<key>04B54B45AA5529C7951915166A00D0DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +147,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36C38AA0B9A336FC3C398ADEDAA35884</key>
+		<key>227D3565920710057358846C80DB48EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>253427B8B24AC303BF25A427391BCB54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>332F91393FB1DE033D370B4CEDDD5FCF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>3BE98CC9F4FEA5D4E4417F13FE6C313B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,12 +182,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55BDF04E160106A561864D4D81A6A018</key>
+		<key>593E9479C06FB200807D11AB29EB50BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7568ABBEC5C655B3BC76918AF95FFCE3</key>
+		<key>5B5AC3C06B783F8674FDB4C0F900B56A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>717FB015EF304385FE59C2D2683E0DD7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7335E9C9689F3B8A16F063A884748533</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>741DC60610BCCF4515E44AA37ACFFA28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,7 +217,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>92228AD7AF7673E866324FFC90E84DEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9BDD0E42347ED8EDEA19928B85B79254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7FEAA14E89971698ACA148F7F7202F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,12 +237,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB2086799B0AB020E1AA5BC2CB146EEA</key>
+		<key>CAEC7B1C8D8A9F9DCD460FEFEE1C5A11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F49684E1F9BCAED3451C73A63AA58709</key>
+		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4D78923DE2B5EEC6D56403976F9FCFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E61209CDCF71CBAA8EF45D1A545538AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

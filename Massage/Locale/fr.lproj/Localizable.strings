@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  b2c-ios
+
+  Created by Giles Williams on 17/10/2016.
+  Copyright © 2016 Urban Massage. All rights reserved.
+*/
+
+"OK" = "D'accord";
+"Cancel" = "Annuler";
+
+///On-boarding Page
+
+"EnterYourAddress" = "Entrez votre adresse";
+"EnterYourAddressDescription" = "Dites-nous où vous êtes, afin que nous puissions trouver les meilleurs thérapeutes près de chez vous";
+"SelectTreatment" = "Sélectionner un traitement";
+"SelectTreatmentDescription" = "Choisissez une date et une heure qui vous conviennent, le massage que vous souhaitez et votre thérapeute.";
+"SelectTherapist" = "Sélectionner un thérapeute";
+"SelectTherapistDescription" = "Avec plus de 500 thérapeutes, l'arrière-plan vérifié et révisé par de vrais clients comme vous, vous pouvez être assuré de trouver celui qui convient à vos besoins.";
+"RelaxLabel" = "Et détendre...";
+"GetStartedDescription" = "Votre thérapeute choisi fera son chemin vers vous. Asseyez-vous, détendez-vous et profitez de votre traitement.";
+"Skip" = "Sauter";
+"GetStartedButton" = "COMMENCER";
+"CreateAccountTab" = "CRÉER UN COMPTE";
+"LoginTab" = "S'IDENTIFIER";
+"facebookLoginButton" = "CONNECTER AVEC FACEBOOK";
+"OR" = "OU";
+"EnterFullName" = "Entrez votre nom complet";
+"CreatePassword" = "Créer un mot de passe";
+"ConfirmPassword" = "Confirmez le mot de passe";
+"SelectYourCity" = "Sélectionnez votre ville";
+"SupportButton" = "Soutien";
+"TermsButton" = "termes et conditions";
+"PrivacyButton" = "Politique de confidentialité";
+"signupButton" = "S'INSCRIRE";
+"signinButton" = "SE CONNECTER";
+"selectCityActionsheetTitle" = "Sélectionnez votre ville d'origine";
+"EmailAddress" = "Adresse e-mail";
+"Password" = "Mot de passe";
+"emailInputErrorTitle" = "Erreur d'entrée d'e-mail!";
+"emailAddressInvalidMessage" = "Adresse email invalide!";
+"passwordInputErrorTitle" = "Erreur d'entrée de mot de passe!";
+"passwordInputErrorMessage" = "Le mot de passe doit comporter au moins 6 caractères!";
+"passwordInputNotMatchingMessage" = "Le mot de passe doit correspondre avec confirmer le mot de passe!";
+"fullNameInputErrorTitle" = "Erreur d'entrée de nom!";
+"fullNameInputErrorMessage" = "Votre nom ne doit pas être vide!";
+"forgotPasswordButton" = "Ne me souviens pas?";
+"ForgotPasswordLabel" = "Mot de passe oublié?";
+"ForgotPasswordTitle" = "Mot de passe oublié";
+"ForgotPasswordDescription" = "Entrez votre courriel ci-dessous pour recevoir vos instructions de réinitialisation de mot de passe.";
+"EnterEmail" = "Entrer votre Email";
+"SendIntroButton" = "ENVOYER DES INSTRUCTIONS";
+"checkEmailTitle" = "Merci de consulter vos emails";
+"sendPasswordSuccessfully" = "Nous vous avons envoyé avec succès un lien pour réinitialiser votre mot de passe.";
+
+/// Home Page
+"nearByLabel" = "Thérapeutes à proximité";
+"nextDate7days" = "7 jours suivants";
+"seeAll" = "Voir tout";
+
+
